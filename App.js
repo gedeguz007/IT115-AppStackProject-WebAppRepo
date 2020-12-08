@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import mainLogo from './logo.jpg';
 
 function App() {
     
@@ -25,7 +26,8 @@ function App() {
         Setdisplay("GOODBYE, !!"+ userName);
     }
      return (
-         <div>
+         <div id="wrapper">
+            <img id="logo" src={mainLogo} alt="logo"></img>
             <div className='App'>
                 <p>
                 <h1>Final Project IT 115</h1>
@@ -48,6 +50,13 @@ function App() {
                 <h3> Goodbye World </h3>
                 </button>
             </section>
+            <footer>
+                <ul>
+                    <li><i>Copyright 2020 ©</i></li>
+                    <li> <i>All Rights Reserved</i></li>
+                    <li> <i>Group 1 Web App</i></li>
+                </ul>
+            </footer>
          </div>
      );
 }
